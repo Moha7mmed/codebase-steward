@@ -1,0 +1,33 @@
+{
+  "_doc": "Filled by the agent per project (restructure-project skill). Folder names are this project's own.",
+  "allowed": {
+    "README.md": "readme", "CLAUDE.md": "layout rules", ".gitignore": "git", ".gitattributes": "git",
+    ".env.example": "key names only", ".restructure/**": "restructure tools",
+    "src/**": "code (rename to the project's own folders)", "tests/**": "tests", "docs/**": "docs"
+  },
+  "gen_homes": ["var/"],
+  "gen_dirs": ["out", "qa", "tmp", "cache", "frames", "work"],
+  "rule_globs": ["CLAUDE.md", "docs/rules/*.md", ".claude/agents/*.md"],
+  "guard_files": [".restructure/write_guard.py", ".restructure/layout_lint.py", ".restructure/layout_rules.py", ".claude/settings.json", ".claude/settings.local.json"],
+  "never_edit": [],
+  "legacy": [],
+  "dup_lines": 12,
+  "size_cap": 32000,
+  "dup_skip": ["templates/", "reference/"],
+  "history_excludes": ["docs/history/"],
+  "exceptions_note": "CLAUDE.md",
+  "log": "var/guard.log",
+  "paid_commands": [{"module": "example.paid_tool", "flag": "--live"}, {"script": "example_send.py", "flag": "--live"}],
+  "paid_hosts": ["api.example-paid-service.com"],
+  "paid_env_vars": ["EXAMPLE_PAID_API_KEY"],
+  "paid_skills": [], "paid_imports": [], "paid_headers": [], "shared_code_dirs": ["src/shared/**"], "door": {},
+  "baseline": {
+    "dir": "var/baseline",
+    "tests": "python -m pytest -q",
+    "commands": [
+      {"name": "example", "run": "python -m src.backtest --data tests/data/fixed.csv --out var/baseline-run/example.json",
+       "outputs": ["var/baseline-run/example.json"],
+       "normalise": [{"glob": "*.json", "regex": "\"generated_at\": \"[^\"]*\"", "replace": "\"generated_at\": \"X\""}]}
+    ]
+  }
+}

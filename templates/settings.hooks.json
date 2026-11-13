@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash|PowerShell|Skill",
+        "hooks": [{"type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.restructure/write_guard.py\""}]
+      }
+    ]
+  }
+}

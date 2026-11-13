@@ -1,0 +1,3 @@
+{"type": "assistant", "timestamp": "2026-11-10T10:00:00Z", "message": {"id": "a", "usage": {"cache_read_input_tokens": 1000, "cache_creation_input_tokens": 100, "input_tokens": 10, "output_tokens": 20}}}
+{"type": "assistant", "timestamp": "2026-11-10T10:00:00Z", "message": {"id": "a", "usage": {"cache_read_input_tokens": 1000, "cache_creation_input_tokens": 100, "input_tokens": 10, "output_tokens": 20}}}
+{"type": "assistant", "timestamp": "2026-11-12T10:00:00Z", "message": {"id": "b", "usage": {"cache_read_input_tokens": 2000, "cache_creation_input_tokens": 0, "input_tokens": 5, "output_tokens": 10}}}

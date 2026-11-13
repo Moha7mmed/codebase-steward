@@ -1,7 +1,7 @@
-"""Install the restructure tools into a project, or report where it stands (restructure-project skill).
+"""Install the restructure tools into a project, or report where it stands (codebase-steward skill).
 
-  python ~/.claude/skills/restructure-project/tools/install.py <project> [--dry-run]
-  python ~/.claude/skills/restructure-project/tools/install.py status <project>
+  python ~/.claude/skills/codebase-steward/tools/install.py <project> [--dry-run]
+  python ~/.claude/skills/codebase-steward/tools/install.py status <project>
 
 install: copies the tools into <project>/.restructure/ (an update overwrites the tools, never config.json), writes
 config.json from the template only when absent, adds the guard hook to .claude/settings.json beside any hooks already

@@ -1,4 +1,4 @@
-"""The project's layout rules, read from .restructure/config.json (restructure-project skill).
+"""The project's layout rules, read from .restructure/config.json (codebase-steward skill).
 
 Nothing here names a project: every folder name comes from the config the agent writes for the project.
 """

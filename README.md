@@ -1,4 +1,4 @@
-# restructure-project
+# codebase-steward
 
 A [Claude Code](https://claude.com/claude-code) skill for cleaning up a codebase that has grown messy. It
 restructures the project once, to ten fixed principles, without changing any result. It then leaves
@@ -53,7 +53,7 @@ Details: [reference/principles.md](reference/principles.md).
 Clone it into your Claude Code skills folder:
 
 ```sh
-git clone https://github.com/Moha7mmed/restructure-project.git ~/.claude/skills/restructure-project
+git clone https://github.com/Moha7mmed/codebase-steward.git ~/.claude/skills/codebase-steward
 ```
 
 Then ask Claude Code to start a new project, to restructure an existing one, or to add a feature. The skill loads by itself.
@@ -69,8 +69,8 @@ folder:
 You can also run the installer by hand:
 
 ```sh
-python ~/.claude/skills/restructure-project/tools/install.py status <project>   # NEW, or restructured since when
-python ~/.claude/skills/restructure-project/tools/install.py <project>          # install or update the tools
+python ~/.claude/skills/codebase-steward/tools/install.py status <project>   # NEW, or restructured since when
+python ~/.claude/skills/codebase-steward/tools/install.py <project>          # install or update the tools
 ```
 
 It needs Python 3 and git (tested on Python 3.14).

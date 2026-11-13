@@ -1,9 +1,9 @@
 ---
-name: restructure-project
+name: codebase-steward
 description: Use when a project's files and code are not laid out by the owner's principles (duplicated code, no shared modules, tools called from everywhere, keys or absolute paths in code, generated files in git, backup copies, rules repeated or contradicting) and it should be restructured once without changing any result, or when an already-restructured project needs a cheap check-and-repair, or when a new project should be built by those principles from the start, or when one new feature should be placed by them.
 ---
 
-# Restructure a project
+# Codebase steward
 
 Restructure a project to fixed principles **without changing any result**, and leave behind the rules, the commit lint
 and the guard that keep it that way. Proven on a real production project (2026-11-10/11). Talk to the owner in **his language**; this file
@@ -15,7 +15,7 @@ is English because agents read it.
   [reference/new-project.md](reference/new-project.md). Layout and checks before the first feature.
 - **Adding one feature** (a module, tool, job or pattern) and not reorganising: the light **feature check**,
   [reference/feature.md](reference/feature.md). Restructured or not, no install, no baseline.
-- **Reorganising:** run `python ~/.claude/skills/restructure-project/tools/install.py status <project>`.
+- **Reorganising:** run `python ~/.claude/skills/codebase-steward/tools/install.py status <project>`.
 
   - `NEW` → the full process below.
   - `RESTRUCTURED since <date> at <commit>` → **check-and-repair** only: [reference/rerun.md](reference/rerun.md).
@@ -44,7 +44,7 @@ Sizes and the cost estimate to announce: [reference/sizes-and-cost.md](reference
 
 ## The tools
 
-`python ~/.claude/skills/restructure-project/tools/install.py <project>` installs into `<project>/.restructure/`:
+`python ~/.claude/skills/codebase-steward/tools/install.py <project>` installs into `<project>/.restructure/`:
 `layout_lint.py` (+ `layout_rules.py`), `write_guard.py`, `baseline.py`, `tokens.py`, a `config.json` you then fill for
 the project, the PreToolUse hook (added beside existing hooks) and the pre-commit hook (chained, never replacing).
 

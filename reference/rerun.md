@@ -3,7 +3,7 @@
 `install.py status <project>` said `RESTRUCTURED since <date> at <commit>` and listed the files changed since.
 
 0. Estimate: half of `tokens_weighted` in `.restructure/last-run.json`; announce it; the 1.5× stop applies to it.
-1. Update the installed tools if the skill's are newer: `python ~/.claude/skills/restructure-project/tools/install.py <project>`
+1. Update the installed tools if the skill's are newer: `python ~/.claude/skills/codebase-steward/tools/install.py <project>`
    (keeps `config.json`, keeps every hook). The tools are guard files: change the `CLAUDE.md` exceptions note in the same
    commit (what was updated and why), or the commit lint refuses it (`rules-widened`).
 2. `python .restructure/layout_lint.py --all`; `python .restructure/baseline.py compare`.

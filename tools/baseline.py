@@ -1,4 +1,4 @@
-"""Baseline (restructure-project skill): "the same result" before and after every step.
+"""Baseline (codebase-steward skill): "the same result" before and after every step.
 
   python .restructure/baseline.py record [--only=a,b]    run everything twice, keep the hashes (exit 2 if two runs differ)
   python .restructure/baseline.py compare [--only=a,b]   run again and compare: BASELINE MATCH (0) or BASELINE MISMATCH (1)

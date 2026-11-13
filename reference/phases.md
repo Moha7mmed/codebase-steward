@@ -24,7 +24,7 @@ Report a short table and a size ([sizes-and-cost.md](sizes-and-cost.md)) with th
 1. A branch for the work (e.g. `restructure`), then a safety commit if anything is uncommitted by the owner's OK, and the
    tag `structure-start` on the starting commit.
 2. Ask the owner which actions cost money or cannot be undone. Install the tools
-   (`python ~/.claude/skills/restructure-project/tools/install.py <project>`), fill `.restructure/config.json`
+   (`python ~/.claude/skills/codebase-steward/tools/install.py <project>`), fill `.restructure/config.json`
    (`paid_commands`, `paid_hosts`, `paid_env_vars`, `paid_skills`, `guard_files`, `never_edit`) and check the guard denies
    each one by feeding it events (`echo '<event json>' | python .restructure/write_guard.py`, with **absolute** paths, as
    Claude Code sends them). Run `python .restructure/write_guard.py --check`: it must say `guard config: OK` (it flags

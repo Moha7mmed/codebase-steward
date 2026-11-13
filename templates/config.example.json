@@ -1,5 +1,5 @@
 {
-  "_doc": "Filled by the agent per project (restructure-project skill). Folder names are this project's own.",
+  "_doc": "Filled by the agent per project (codebase-steward skill). Folder names are this project's own.",
   "allowed": {
     "README.md": "readme", "CLAUDE.md": "layout rules", ".gitignore": "git", ".gitattributes": "git",
     ".env.example": "key names only", ".restructure/**": "restructure tools",

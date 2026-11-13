@@ -1,4 +1,4 @@
-"""Write guard (restructure-project skill), a Claude Code PreToolUse hook for
+"""Write guard (codebase-steward skill), a Claude Code PreToolUse hook for
 Write|Edit|MultiEdit|NotebookEdit|Bash|PowerShell|Skill. Every name comes from .restructure/config.json.
 
 A new file (or folder) inside the project is REFUSED (exit 2, reason on stderr) when it is outside the layout (`allowed`),

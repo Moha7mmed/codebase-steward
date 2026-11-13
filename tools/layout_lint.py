@@ -1,4 +1,4 @@
-"""Layout lint (restructure-project skill): refuses a commit that breaks the project's layout rules.
+"""Layout lint (codebase-steward skill): refuses a commit that breaks the project's layout rules.
 
   python .restructure/layout_lint.py --staged   (the pre-commit hook)
   python .restructure/layout_lint.py --all      (every tracked file)

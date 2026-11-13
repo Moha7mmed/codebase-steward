@@ -16,7 +16,7 @@ def _front(text):
 
 def test_frontmatter_valid():
     fm = _front((ROOT / "SKILL.md").read_text(encoding="utf-8"))
-    assert fm["name"] == ROOT.name == "restructure-project"
+    assert fm["name"] == ROOT.name == "codebase-steward"
     assert fm["description"].startswith("Use when")
     assert len(fm["description"]) <= 1024
 

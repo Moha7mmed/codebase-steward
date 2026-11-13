@@ -1,3 +1,3 @@
 #!/bin/sh
-# restructure-project: the layout lint refuses a commit that breaks the project layout rules (never --no-verify)
+# codebase-steward: the layout lint refuses a commit that breaks the project layout rules (never --no-verify)
 python .restructure/layout_lint.py --staged || exit 1

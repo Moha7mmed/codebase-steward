@@ -53,7 +53,7 @@ only approval gate in this mode.
 
 1. `git init`, then commit the files above, because the installer refuses a folder with
    uncommitted work.
-2. `python ~/.claude/skills/restructure-project/tools/install.py <project>`.
+2. `python ~/.claude/skills/codebase-steward/tools/install.py <project>`.
 3. Fill `.restructure/config.json`:
    - `allowed`: the chosen folders;
    - `paid_commands`, `paid_hosts`, `paid_env_vars`: from step 1;

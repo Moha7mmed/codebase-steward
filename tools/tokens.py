@@ -1,4 +1,4 @@
-"""Token use of this project's Claude Code sessions (restructure-project skill): main conversations + their subagents.
+"""Token use of this project's Claude Code sessions (codebase-steward skill): main conversations + their subagents.
 
   python .restructure/tokens.py                       every session of this project
   python .restructure/tokens.py --from 2026-11-10     only calls at or after that time (UTC, as in the log)
